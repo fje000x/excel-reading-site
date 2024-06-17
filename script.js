@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const correctPassword = 'dc7010'
-   
-
+    const correctPassword = 'dc7010';
     const passwordModal = document.getElementById('passwordModal');
     const passwordInput = document.getElementById('passwordInput');
     const submitPassword = document.getElementById('submitPassword');
@@ -79,6 +77,7 @@ function displayTable(data) {
     table += '</tbody></table>';
     tableContainer.innerHTML = table;
 }
+
 // Fetch and display the fact of the day
 function fetchFactOfTheDay() {
     $.ajax({
