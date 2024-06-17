@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="flappy.html" id="flappyLink">FlappyBird </a>
+    </nav>
+    <div id="passwordModal" class="modal">
+        <div class="modal-content">
+            <h2>Enter Password</h2>
+            <input type="password" id="passwordInput">
+            <button id="submitPassword">Submit</button>
+            <p id="passwordError" style="color: red; display: none;">Incorrect password. Please try again.</p>
+        </div>
+    </div>
+
+    <h1 style="display:none;">Top 10 Employees</h1>
+    <input type="file" id="fileInput" accept=".xlsx, .xls" style="display:none;">
+    <div id="tableContainer"></div>
+    <div id="factContainer" style="display:none;">
+        <p id="fact"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+    <script src="three-script.js"></script>
+</body>
+</html>

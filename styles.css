@@ -1,0 +1,224 @@
+body {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #FF4500; /* OrangeRed color */
+    text-shadow: 2px 2px #000;
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-top: 40px;
+    color: white;
+    font-weight: 100;
+}
+
+input[type="file"] {
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #FF4500;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+    display: block; /* Center align */
+    transition: transform 0.3s;
+}
+
+input[type="file"]:hover {
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+th, td {
+    border: 2px solid #FF4500;
+    padding: 5px;
+    text-align: center;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+th {
+    background-color: #222;
+    color: #FF4500;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+}
+
+tr:nth-child(even) {
+    background-color: #333;
+}
+
+tr:hover {
+    background-color: #444;
+}
+
+tr:first-child td {
+    background-color: #FF4500;
+    color: #000;
+    font-weight: bold;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px #FF4500; }
+    to { box-shadow: 0 0 20px #FF4500, 0 0 30px #FF4500; }
+}
+
+#factContainer {
+    margin-top: 50px;
+}
+
+#fact {
+    font-size: 1em;
+    font-weight: 200;
+    
+    animation: fadeIn 2s ease-in-out;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    perspective: 1000px;
+}
+
+.modal-content {
+    background-color: #222;
+    padding: 30px;
+    border: 1px solid #FF4500;
+    text-align: center;
+    color: #fff;
+    width: 300px;
+    animation: spin 10s infinite linear, popIn 0.5s ease-out;
+    transform-style: preserve-3d;
+}
+
+@keyframes spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+@keyframes popIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.modal-content input[type="password"],
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    animation: popIn 0.5s ease-out;
+}
+
+.modal-content input[type="password"] {
+    background-color: #333;
+    color: #fff;
+}
+
+.modal-content button {
+    background-color: #FF4500;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #FF6347;
+    transform: scale(1.05);
+}
+
+#passwordError {
+    color: #FF6347;
+    margin-top: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+body {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #FF4500;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+   background-color: transparent;
+   border: none;
+}
+
+
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 2px solid #FF4500;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+}
